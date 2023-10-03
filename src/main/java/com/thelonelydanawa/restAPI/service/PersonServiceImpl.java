@@ -1,7 +1,7 @@
 package com.thelonelydanawa.restAPI.service;
 
 import com.thelonelydanawa.restAPI.model.Person;
-import com.thelonelydanawa.restAPI.repository.UserRepository;
+import com.thelonelydanawa.restAPI.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,10 +10,10 @@ import java.util.Objects;
 import java.util.Optional;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class PersonServiceImpl implements PersonService {
 
     @Autowired
-    private UserRepository repository;
+    private PersonRepository repository;
 
     @Override
     public Person saveUser(Person person) {

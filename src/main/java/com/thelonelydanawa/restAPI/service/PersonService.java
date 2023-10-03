@@ -4,7 +4,7 @@ import com.thelonelydanawa.restAPI.model.Person;
 
 import java.util.List;
 
-public interface UserService {
+public interface PersonService {
     // Create
     Person saveUser(Person person);
     // Read
